@@ -47,7 +47,7 @@ VN2 Vbiasn2 0 DC {vbiasn2}
 
 .control
 op
-pre_osdi ../../../osdilibs/bsimcmgl.osdi
+pre_osdi ../../../osdilibs/bsimcmg.osdi
 set xbrushwidth=3
 run
 
