@@ -1,0 +1,28 @@
+* Minimal MOSFET operating point extraction
+
+* Supply voltage
+VDD vdd 0 DC 1.2
+
+* Gate voltage
+VG vg 0 DC 0.7
+
+* Load resistor
+RD vdd drain 1k
+
+* NMOS transistor
+M0 drain vg 0 0 nmos L=180n W=1u
+
+* Use built-in BSIM3 model (Level 8)
+.model nmos nmos level=8 version=3.2.4
+
+* Analysis
+.op
+
+.control
+  set filetype=ascii
+  run
+  print @m0[ids] @m0[vgs] @m0[vds] @m0[gm] @m0[region]
+.endc
+
+.end
+
