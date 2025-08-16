@@ -49,6 +49,7 @@ VN2 Vbiasn2 0 DC {vbiasn2}
 op
 pre_osdi ../../../osdilibs/bsimcmg.osdi
 set xbrushwidth=3
+set filetype=ascii
 run
 
 let vgs_nm0 = v(Vinn) - v(net13)
@@ -84,7 +85,7 @@ let vds_nm9 = v(net25)
 let vgs_nm10 = v(Vbiasn1) 
 let vds_nm10 = v(net27) 
 
-wrdata output.log @nm0[gm] @nm0[ids] @nm0[vth] vgs_nm0 vds_nm0
+write output.log @nm0[gm] @nm0[ids] @nm0[vth] vgs_nm0 vds_nm0
 + @nm1[gm] @nm1[ids] @nm1[vth] vgs_nm1 vds_nm1
 + @nm2[gm] @nm2[ids] @nm2[vth] vgs_nm2 vds_nm2 
 + @nm3[gm] @nm3[ids] @nm3[vth] vgs_nm3 vds_nm3
