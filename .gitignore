@@ -30,3 +30,4 @@ code/*/*/.libs
 *.adms
 .headerstring*
 .registerstring*
+*.log
